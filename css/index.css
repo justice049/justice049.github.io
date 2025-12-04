@@ -20179,6 +20179,26 @@ body[data-type="album"] #page .page-title {
   }
 }
 
+/* 强制覆盖所有鼠标指针 */
+* {
+  cursor: url('/img/putong.cur'), auto !important;
+}
+
+/* 链接和按钮 */
+a, button, [onclick], .nav-item, .menu-item {
+  cursor: url('/img/xuanzhong.cur'), pointer !important;
+}
+
+/* 文本输入区域 */
+input, textarea, pre, code, [contenteditable="true"] {
+  cursor: url('/img/text.cur'), text !important;
+}
+
+/* 禁用状态 */
+.disabled, [disabled], .busy {
+  cursor: not-allowed !important;
+}
+
 h1#site-title {
   font-size: 3em !important;
 }
