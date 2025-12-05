@@ -450,12 +450,42 @@ if (true) {
     }
   }
 
+  // Replace common Gravatar hosts with Cravatar after Valine renders avatars
+  const replaceAvatarHostToCravatar = () => {
+    try {
+      const root = document.getElementById('vcomment') || document.body
+      const imgs = root.querySelectorAll('img')
+      imgs.forEach(img => {
+        if (!img.src) return
+        try {
+          const url = new URL(img.src, location.href)
+          // replace known gravatar hosts to cravatar
+          if (/gravatar|gravatar\.loli|gravatar\.cn|secure\.gravatar|www\.gravatar/.test(url.hostname)) {
+            url.hostname = 'cravatar.cn'
+            // ensure path format /avatar/<hash>
+            if (!/^\/avatar\//.test(url.pathname)) {
+              // if path contains /avatar, preserve, otherwise keep pathname
+            }
+            img.src = url.toString()
+          }
+        } catch (e) {
+          // ignore per-image errors
+        }
+      })
+    } catch (e) {
+      // nothing
+    }
+  }
+
   if ('Valine' === 'Valine' || !false) {
     if (false) anzhiyu.loadComment(document.getElementById('vcomment'),loadValine)
     else setTimeout(loadValine, 0)
   } else {
     window.loadOtherComment = loadValine
   }
+  // run replacement after initial load and on PJAX navigations
+  window.addEventListener('load', () => setTimeout(replaceAvatarHostToCravatar, 600))
+  document.addEventListener('pjax:complete', () => setTimeout(replaceAvatarHostToCravatar, 400))
 })()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script src="https://cdn.cbd.int/blueimp-md5@2.19.0/js/md5.min.js"></script><script>window.addEventListener('load', () => {
   const changeContent = (content) => {
     if (content === '') return content

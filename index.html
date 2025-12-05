@@ -60,7 +60,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-12-05 14:50:44',
+  postUpdate: '2025-12-05 15:13:20',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -240,14 +240,7 @@ if (true) {
 使用递归反向迭代节点，同时使用递归函数外的变量向前迭代
 计算机如何运行递归函数：在一个函数中调用一个函数时，计算机需要在进入被调用函数之前跟踪它在当前函数中的位置（以及任何局部变量的值），通过运行时存放在堆栈中来实现（堆栈帧）。在堆栈中存放好了数据后就可以进入被调用的函数。在完成被调用函数之后，他会弹出堆栈顶部元素，以恢复在进行函数调用之前所在的函数。在进行回文检查之前，递归函数将在堆栈中创建 n 个堆栈帧，计算机会逐个弹出进行处理。所以在使用递归时空间复杂度要考虑堆栈的使用情况，不是完全适用的，层次过深开销太大。
 实现：
-1234567891011121314151617181920212223struct ListNode* frontPointer;bool recursivelyCheck(struct ListNode* cur ...</div><a class="blog-slider__button" href="2025/11/19/链表和递归的双向奔赴/" alt="链表与递归的双向奔赴">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/类和对象3/" title="类和对象三部曲（three）"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929596cb4e23f08080ab0f9.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/类和对象3/" alt="类和对象三部曲（three）">类和对象三部曲（three）</a><div class="blog-slider__text">​我喜欢小树森林
-接着再说说剩余的类和对象的内容吧
-构造函数在创建对象时，编译器通过调用构造函数，给对象中各个成员变量一个合适的初始值
-1234567891011121314class Date&amp;#123;public:	Date(int year, int month, int day)	&amp;#123;		_year = year;		_month = month;		_day = day;	&amp;#125;private:	int _year;	int _month;	int _day;&amp;#125;;
-
-虽然上述构造函数调用之后，对象中已经有了一个初始值，但是不能将其称为对对象中成员变量 的初始化，构造函数体中的语句只能将其称为赋初值，而不能称作初始化。因为初始化只能初始 化一次，而构造函数体内可以多次赋值
-初始化列表初始化列表：以一个冒号开始，接着是一个以逗号分隔的数据成员列表，每个”成员变量”后面跟 一个放在括号中的初始值或表达式
-1234567891011121314class Date&amp;#123;public:	Date(int year, int month, int day) ...</div><a class="blog-slider__button" href="2025/11/28/类和对象3/" alt="类和对象三部曲（three）">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/类和对象2/" title="类和对象三部曲（two）"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692955187f8e1c737822ba7f.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/类和对象2/" alt="类和对象三部曲（two）">类和对象三部曲（two）</a><div class="blog-slider__text">​拼搏百天，C嘎嘎直接手拿把掐
+1234567891011121314151617181920212223struct ListNode* frontPointer;bool recursivelyCheck(struct ListNode* cur ...</div><a class="blog-slider__button" href="2025/11/19/链表和递归的双向奔赴/" alt="链表与递归的双向奔赴">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/类和对象2/" title="类和对象三部曲（two）"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692955187f8e1c737822ba7f.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/类和对象2/" alt="类和对象三部曲（two）">类和对象三部曲（two）</a><div class="blog-slider__text">​拼搏百天，C嘎嘎直接手拿把掐
 青春期猪头AD钙不会梦到狸花猫学姐
 6个默认成员函数如果一个类中什么成员都没有，简称为空类。 空类中真的什么都没有吗？
 并不是，任何类在什么都不写时，编译器会自动生成以下6个默认成员函数。
@@ -260,7 +253,14 @@ if (true) {
 最大的问题：容易忘记（这难道不是我的问题吗）
 C嘎嘎祖师爷显然也发现了这个问题，于是，就搞了个东西出来：构造函数
 构造函数构造函数听起来是不是很朦胧？
-构造函数是一个​特殊的成员函数​，名字与类名相同,创建类类型对象时由编译器​自动调用​，以保证 每个数据成员都有 一个合适的初始 ...</div><a class="blog-slider__button" href="2025/11/28/类和对象2/" alt="类和对象三部曲（two）">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/类和对象1/" title="类和对象三部曲（one）"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929576d7f8e1c737822d9c1.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/类和对象1/" alt="类和对象三部曲（one）">类和对象三部曲（one）</a><div class="blog-slider__text">​都说C语言是面向过程，分析出求解问题的步骤，通过函数调用来逐步解决问题。
+构造函数是一个​特殊的成员函数​，名字与类名相同,创建类类型对象时由编译器​自动调用​，以保证 每个数据成员都有 一个合适的初始 ...</div><a class="blog-slider__button" href="2025/11/28/类和对象2/" alt="类和对象三部曲（two）">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/类和对象3/" title="类和对象三部曲（three）"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929596cb4e23f08080ab0f9.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/类和对象3/" alt="类和对象三部曲（three）">类和对象三部曲（three）</a><div class="blog-slider__text">​我喜欢小树森林
+接着再说说剩余的类和对象的内容吧
+构造函数在创建对象时，编译器通过调用构造函数，给对象中各个成员变量一个合适的初始值
+1234567891011121314class Date&amp;#123;public:	Date(int year, int month, int day)	&amp;#123;		_year = year;		_month = month;		_day = day;	&amp;#125;private:	int _year;	int _month;	int _day;&amp;#125;;
+
+虽然上述构造函数调用之后，对象中已经有了一个初始值，但是不能将其称为对对象中成员变量 的初始化，构造函数体中的语句只能将其称为赋初值，而不能称作初始化。因为初始化只能初始 化一次，而构造函数体内可以多次赋值
+初始化列表初始化列表：以一个冒号开始，接着是一个以逗号分隔的数据成员列表，每个”成员变量”后面跟 一个放在括号中的初始值或表达式
+1234567891011121314class Date&amp;#123;public:	Date(int year, int month, int day) ...</div><a class="blog-slider__button" href="2025/11/28/类和对象3/" alt="类和对象三部曲（three）">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/类和对象1/" title="类和对象三部曲（one）"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929576d7f8e1c737822d9c1.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/类和对象1/" alt="类和对象三部曲（one）">类和对象三部曲（one）</a><div class="blog-slider__text">​都说C语言是面向过程，分析出求解问题的步骤，通过函数调用来逐步解决问题。
 拿洗衣服来举例，C关注的是一个过程
 那么C++是什么呢？
 面向对象的编程语言。
@@ -287,7 +287,21 @@ C嘎嘎祖师爷显然也发现了这个问题，于是，就搞了个东西出�
 ​ translate最大的优点是不会影响到其他元素的位置
 translate的百分比单位是相对于自身元素的translate
 我们可以用这个特点实现子盒子在父盒子的中央位置
-123456789101112131415161718192021222324252627282930&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;qu ...</div><a class="blog-slider__button" href="2025/12/03/CSS动画/" alt="CSS动画">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/CSS定位/" title="CSS定位"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692f9df37313ea6c251022c2.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/CSS定位/" alt="CSS定位">CSS定位</a><div class="blog-slider__text">为什么要用定位以下的情况用标准流或者浮动可以实现吗？
+123456789101112131415161718192021222324252627282930&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;qu ...</div><a class="blog-slider__button" href="2025/12/03/CSS动画/" alt="CSS动画">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/CSS小项目/" title="CSS小项目"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692965c27f8e1c737822fe39.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/CSS小项目/" alt="CSS小项目">CSS小项目</a><div class="blog-slider__text">小工具：snipaste全世界最好用的截图工具来了
+Snipaste是一个强大简单的截图工具，方便的点就在于可以把截图贴回屏幕上
+常用快捷方式有这些：
+
+1.F1截图，同时测量大小，设置箭头，文字书写
+2.F3在桌面置顶显示
+3.点击图片，Alt取色（Shift切换取色模式）
+4.按Esc取消图片显示
+
+小米侧边栏核心就是转成块级元素
+
+1.把链接a转换为块级元素，这样链接可以单独占一行，并且有宽度和高度
+2.鼠标经过a给链接设置背景颜色
+
+123456789101112131415161718192021222324252627282930&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;style&amp;gt;   ...</div><a class="blog-slider__button" href="2025/11/28/CSS小项目/" alt="CSS小项目">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/CSS定位/" title="CSS定位"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692f9df37313ea6c251022c2.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/CSS定位/" alt="CSS定位">CSS定位</a><div class="blog-slider__text">为什么要用定位以下的情况用标准流或者浮动可以实现吗？
 1.某个元素可以自由的在一个盒子内移动位置，并且压住其他的盒子2.当我们滚动窗口的时候，盒子是固定屏幕某个位置的
 就像是CSDN的创作助手和这个吗喽一样：
 就是因为以上效果，标准流或者浮动都无法快速的实现，所以需要用到定位来实现
@@ -308,21 +322,19 @@ translate的百分比单位是相对于自身元素的translate
 静态定位是元素的默认定位方式，无定位的意思：
 1选择器 &amp;#123; position: static; &amp;#125;
 
-静态 ...</div><a class="blog-slider__button" href="2025/12/03/CSS定位/" alt="CSS定位">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/CSS小项目/" title="CSS小项目"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692965c27f8e1c737822fe39.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/CSS小项目/" alt="CSS小项目">CSS小项目</a><div class="blog-slider__text">小工具：snipaste全世界最好用的截图工具来了
-Snipaste是一个强大简单的截图工具，方便的点就在于可以把截图贴回屏幕上
-常用快捷方式有这些：
+静态 ...</div><a class="blog-slider__button" href="2025/12/03/CSS定位/" alt="CSS定位">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/CSS布局/" title="CSS布局"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929643d7f8e1c737822df60.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/CSS布局/" alt="CSS布局">CSS布局</a><div class="blog-slider__text">​那就讲讲CSS元素的显示模式吧
+在CSS中，HTML的标签显示模式有很多
+元素的显示模式块级元素常见的块级元素：
+1234567h1 - h6pdivulolli...
 
-1.F1截图，同时测量大小，设置箭头，文字书写
-2.F3在桌面置顶显示
-3.点击图片，Alt取色（Shift切换取色模式）
-4.按Esc取消图片显示
+有一些特点：
 
-小米侧边栏核心就是转成块级元素
+独占一行
+高度，宽度，内外边距，行高都可以控制
+宽度默认是父级元素宽度的100%（和父元素一样宽）
+是一个容器（盒子），里面可以放行内和块级元素
 
-1.把链接a转换为块级元素，这样链接可以单独占一行，并且有宽度和高度
-2.鼠标经过a给链接设置背景颜色
-
-123456789101112131415161718192021222324252627282930&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;style&amp;gt;   ...</div><a class="blog-slider__button" href="2025/11/28/CSS小项目/" alt="CSS小项目">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/CSS高级技巧/" title="CSS高级寄巧"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692f9f9a7313ea6c25102340.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/CSS高级技巧/" alt="CSS高级寄巧">CSS高级寄巧</a><div class="blog-slider__text">精灵图为什么需要精灵图呢？一个网页中往往会应用很多小背景图作为修饰，当网页中的图像过多时，服务器就会频繁地接收和发送 请求图片，造成服务器请求压力过大，这将大大降低页面的加载速度。
+123456789101112131415161718192021222324252627282930313233&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;    &amp;lt;style&amp;gt;        .de ...</div><a class="blog-slider__button" href="2025/11/28/CSS布局/" alt="CSS布局">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/CSS高级技巧/" title="CSS高级寄巧"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692f9f9a7313ea6c25102340.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/CSS高级技巧/" alt="CSS高级寄巧">CSS高级寄巧</a><div class="blog-slider__text">精灵图为什么需要精灵图呢？一个网页中往往会应用很多小背景图作为修饰，当网页中的图像过多时，服务器就会频繁地接收和发送 请求图片，造成服务器请求压力过大，这将大大降低页面的加载速度。
 因此，为了有效地减少服务器接收和发送请求的次数，提高页面的加载速度，出现了 CSS 精灵技术（也称 CSS Sprites、CSS 雪碧）
 核心原理：将网页中的一些小背景图像整合到一张大图中 ，这样服务器只需要一次请求就可以了
 这是王者和淘宝的精灵图
@@ -349,23 +361,7 @@ HTML5新增的多媒体标签新增的多媒体标签主要包含：
 
 音频：&amp;lt;audio&amp;gt;视频：&amp;lt;video&amp;gt;
 
-使用他们可以更方便的在页面中嵌入音频和视频，而不再使用flash和其他浏览器 ...</div><a class="blog-slider__button" href="2025/11/28/H5和C3新特性/" alt="H5和C3的新特性">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS使用细节/" title="JS使用细节"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fdc384c455cbabc9589e3.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS使用细节/" alt="JS使用细节">JS使用细节</a><div class="blog-slider__text">程序跑起来与避免延迟如果你讲JS，你就不可能只讲JS
-后盾人说开发就要用VScode（确实，Windows和Linux都可以跑）
-然后就是第一天开发的时候装的那些插件
-前端访问流程基本分析托管到服务器上的东西，谁访问下载到谁的电脑里
-就是如此简单。。
-体验解析过程与变量提升
-解析器在执行之前会先做变量的提升
-123456789101112131415161718192021&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        function hd() &amp; ...</div><a class="blog-slider__button" href="2025/12/03/JS使用细节/" alt="JS使用细节">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS值类型使用/" title="JS值类型使用"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd7f74c455cbabc95862b.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS值类型使用/" alt="JS值类型使用">JS值类型使用</a><div class="blog-slider__text">章节介绍与类型判断看看构造函数
-12345678910111213141516&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let hd=[]        let hdcms = &amp;#123;&amp;#125;        console.log(hd instanceof Array)        //判断是否在原型链上（是否由这个构造函数创建出来        console.log(hdcms instanceof Object)    &amp;l ...</div><a class="blog-slider__button" href="2025/12/03/JS值类型使用/" alt="JS值类型使用">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS事件/" title="JS事件"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fab7d7313ea6c25104a6c.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS事件/" alt="JS事件">JS事件</a><div class="blog-slider__text">事件监听（绑定）事件监听目标：能够给DOM元素添加事件监听
-什么是事件事件是在编程时系统内发生的动作或者发生的事情
-比如用户再网页上点击一个按钮
-什么是事件监听就是让程序检测是否有事件产生，一旦有事件触发，就立即调用一个函数做出响应，也称为绑定时间或者注册事件
-比如鼠标经过显示下拉菜单，点击播放轮播图等
-事件类型要加引号
-函数是点击之后再去执行，每次点击都会执行一次
-这是实例：
-12345678910111213141516171819&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;b ...</div><a class="blog-slider__button" href="2025/12/03/JS事件/" alt="JS事件">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS函数和对象/" title="JS函数和对象"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fac5c7313ea6c25104a7d.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS函数和对象/" alt="JS函数和对象">JS函数和对象</a><div class="blog-slider__text">函数为什么需要函数函数是被设计为执行指定任务的代码块
+使用他们可以更方便的在页面中嵌入音频和视频，而不再使用flash和其他浏览器 ...</div><a class="blog-slider__button" href="2025/11/28/H5和C3新特性/" alt="H5和C3的新特性">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS函数和对象/" title="JS函数和对象"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fac5c7313ea6c25104a7d.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS函数和对象/" alt="JS函数和对象">JS函数和对象</a><div class="blog-slider__text">函数为什么需要函数函数是被设计为执行指定任务的代码块
 函数可以把具有相同或者相似逻辑的代码包裹起来，通过函数调用执行这些被包裹的代码逻辑，这样的优势是有利于精简代码方便复用
 函数传参要把计算的数字传到函数内，可以提高灵活性
 还是那句话，形参是实参的临时拷贝（真的吗）
@@ -382,7 +378,27 @@ HTML5新增的多媒体标签新增的多媒体标签主要包含：
 没有名字的函数无法直接使用
 使用方式是函数表达式
 或者立即执行
-函数表达式：将匿名函数赋值给一个变量，并且通过变量 ...</div><a class="blog-slider__button" href="2025/12/03/JS函数和对象/" alt="JS函数和对象">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS原型链/" title="JS原型链"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd7484c455cbabc95856f.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS原型链/" alt="JS原型链">JS原型链</a><div class="blog-slider__text">编程思想主要就是面向过程和面向对象前端的面向过程比较多
+函数表达式：将匿名函数赋值给一个变量，并且通过变量 ...</div><a class="blog-slider__button" href="2025/12/03/JS函数和对象/" alt="JS函数和对象">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS使用细节/" title="JS使用细节"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fdc384c455cbabc9589e3.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS使用细节/" alt="JS使用细节">JS使用细节</a><div class="blog-slider__text">程序跑起来与避免延迟如果你讲JS，你就不可能只讲JS
+后盾人说开发就要用VScode（确实，Windows和Linux都可以跑）
+然后就是第一天开发的时候装的那些插件
+前端访问流程基本分析托管到服务器上的东西，谁访问下载到谁的电脑里
+就是如此简单。。
+体验解析过程与变量提升
+解析器在执行之前会先做变量的提升
+123456789101112131415161718192021&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        function hd() &amp; ...</div><a class="blog-slider__button" href="2025/12/03/JS使用细节/" alt="JS使用细节">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS值类型使用/" title="JS值类型使用"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd7f74c455cbabc95862b.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS值类型使用/" alt="JS值类型使用">JS值类型使用</a><div class="blog-slider__text">章节介绍与类型判断看看构造函数
+12345678910111213141516&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let hd=[]        let hdcms = &amp;#123;&amp;#125;        console.log(hd instanceof Array)        //判断是否在原型链上（是否由这个构造函数创建出来        console.log(hdcms instanceof Object)    &amp;l ...</div><a class="blog-slider__button" href="2025/12/03/JS值类型使用/" alt="JS值类型使用">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS各种对象和本地存储/" title="JS各种对象和本地存储"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd2224c455cbabc957dd5.webp" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS各种对象和本地存储/" alt="JS各种对象和本地存储">JS各种对象和本地存储</a><div class="blog-slider__text">​### Window对象
+BOM（浏览器对象模型）BOM是浏览器对象模型
+Window对象是一个全局对象，也可以说是JS中的顶级对象
+像是document、alert()、console.log()都是window的属性
+所有通过var定义在全局作用域的变量、函数都会变成window对象的属性和方法
+window对象下的属性和方法调用的时候可以省略window
+定时器-延时函数JS内定了一个用来让代码延迟执行的函数，叫setTimeout
+setTimeout仅仅执行一次，就可以理解为把一段代码延迟执行，平时的时候省略window
+延时器需要等待，所以后面的代码先执行
+每次调用延时器都会产生新的延时器
+5s钟之后消失的广告我们需要让5s之后广告自动消失（真的会有这么良心的广告吗，我以为起手三十秒）
+我们需要设置延时函数、隐藏元素
+1234567891011121314151617181920212223242526272829303132333435363738394041&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt ...</div><a class="blog-slider__button" href="2025/12/03/JS各种对象和本地存储/" alt="JS各种对象和本地存储">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS原型链/" title="JS原型链"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd7484c455cbabc95856f.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS原型链/" alt="JS原型链">JS原型链</a><div class="blog-slider__text">编程思想主要就是面向过程和面向对象前端的面向过程比较多
 构造函数封装是面向对象思想中比较重要的一部分，JS的面向对象可以通过构造函数实现封装
 同样的将变量和函数组合到了一起并且能通过this实现数据的共享，不同的是借助构造函数创建出来的实例对象之间是彼此互不影响的
 总结：
@@ -397,19 +413,15 @@ HTML5新增的多媒体标签新增的多媒体标签主要包含：
 构造函数通过原型分配的函数是所有对象所 共享的。
 JavaScript 规定，每一个构造函数都有一个 prototype 属性，指向另一个对象，所以我们也称为原型对象
 这个对象可以挂载函数，对象实例化不会多次创建原型上函数，节约内存
-我们可以把那些不变的方法，直接定义在 prototype 对象上，这样所有对象的实例就可以共 ...</div><a class="blog-slider__button" href="2025/12/03/JS原型链/" alt="JS原型链">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS各种对象和本地存储/" title="JS各种对象和本地存储"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd2224c455cbabc957dd5.webp" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS各种对象和本地存储/" alt="JS各种对象和本地存储">JS各种对象和本地存储</a><div class="blog-slider__text">​### Window对象
-BOM（浏览器对象模型）BOM是浏览器对象模型
-Window对象是一个全局对象，也可以说是JS中的顶级对象
-像是document、alert()、console.log()都是window的属性
-所有通过var定义在全局作用域的变量、函数都会变成window对象的属性和方法
-window对象下的属性和方法调用的时候可以省略window
-定时器-延时函数JS内定了一个用来让代码延迟执行的函数，叫setTimeout
-setTimeout仅仅执行一次，就可以理解为把一段代码延迟执行，平时的时候省略window
-延时器需要等待，所以后面的代码先执行
-每次调用延时器都会产生新的延时器
-5s钟之后消失的广告我们需要让5s之后广告自动消失（真的会有这么良心的广告吗，我以为起手三十秒）
-我们需要设置延时函数、隐藏元素
-1234567891011121314151617181920212223242526272829303132333435363738394041&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt ...</div><a class="blog-slider__button" href="2025/12/03/JS各种对象和本地存储/" alt="JS各种对象和本地存储">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS对象深入/" title="JS内置对象"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd2284c455cbabc957dee.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS对象深入/" alt="JS内置对象">JS内置对象</a><div class="blog-slider__text">深入对象创建对象三种方式首先我们可以利用对象字面量创建对象
+我们可以把那些不变的方法，直接定义在 prototype 对象上，这样所有对象的实例就可以共 ...</div><a class="blog-slider__button" href="2025/12/03/JS原型链/" alt="JS原型链">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS事件/" title="JS事件"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fab7d7313ea6c25104a6c.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS事件/" alt="JS事件">JS事件</a><div class="blog-slider__text">事件监听（绑定）事件监听目标：能够给DOM元素添加事件监听
+什么是事件事件是在编程时系统内发生的动作或者发生的事情
+比如用户再网页上点击一个按钮
+什么是事件监听就是让程序检测是否有事件产生，一旦有事件触发，就立即调用一个函数做出响应，也称为绑定时间或者注册事件
+比如鼠标经过显示下拉菜单，点击播放轮播图等
+事件类型要加引号
+函数是点击之后再去执行，每次点击都会执行一次
+这是实例：
+12345678910111213141516171819&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;b ...</div><a class="blog-slider__button" href="2025/12/03/JS事件/" alt="JS事件">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS对象深入/" title="JS内置对象"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd2284c455cbabc957dee.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS对象深入/" alt="JS内置对象">JS内置对象</a><div class="blog-slider__text">深入对象创建对象三种方式首先我们可以利用对象字面量创建对象
 也可以使用new Object创建对象
 还可以使用构造函数创建对象
 构造函数就像是，直接设定，和new一个出来，和自己搓默认成员函数一样
@@ -433,25 +445,33 @@ Web APIs :
 DOM 操作文档，比如对页面元素进行移动、大小、添加删除等操作
 BOM 操作浏览器，比如页面弹窗，检测窗口宽度、存储数据到浏览器等等
 我们查询资料可以直接去一个权威的网站查：
-JavaScript | MDNJavaScript（JS）是一种具有函数优先特性的轻量级、解释型或者说即时编译型的编程语言。虽然作为 Web 页面中的脚本语言被人所熟知，但是它也被用到了很多非浏览器环境中，例如 Node.js、Apache CouchDB、Adobe Acrobat 等。进一步说，JavaScript 是一种基于原型、多范式、单线程的动态语言，并且支持面向对象、命令式和声明式（如函数式编程 ...</div><a class="blog-slider__button" href="2025/12/03/JS基础/" alt="JS基础">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/CSS布局/" title="CSS布局"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929643d7f8e1c737822df60.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/CSS布局/" alt="CSS布局">CSS布局</a><div class="blog-slider__text">​那就讲讲CSS元素的显示模式吧
-在CSS中，HTML的标签显示模式有很多
-元素的显示模式块级元素常见的块级元素：
-1234567h1 - h6pdivulolli...
-
-有一些特点：
-
-独占一行
-高度，宽度，内外边距，行高都可以控制
-宽度默认是父级元素宽度的100%（和父元素一样宽）
-是一个容器（盒子），里面可以放行内和块级元素
-
-123456789101112131415161718192021222324252627282930313233&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;    &amp;lt;style&amp;gt;        .de ...</div><a class="blog-slider__button" href="2025/11/28/CSS布局/" alt="CSS布局">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS数组挖掘/" title="JS数组挖掘"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fde3b4c455cbabc958b53.gif" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS数组挖掘/" alt="JS数组挖掘">JS数组挖掘</a><div class="blog-slider__text">数组引用类型分析1234567891011121314151617&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let array = [1,2,3,4]        let hd = array        hd[1]=&amp;quot;houdunren.com&amp;quot;        console.log(array)        console.log(hd)    &amp;lt;/script&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/ht ...</div><a class="blog-slider__button" href="2025/12/03/JS数组挖掘/" alt="JS数组挖掘">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/Symbol类型/" title="Symbol类型"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fe0854c455cbabc95a9d2.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/Symbol类型/" alt="Symbol类型">Symbol类型</a><div class="blog-slider__text">Symbol使用场景介绍举个例子，当leader让你去机房取某个电脑的时候，机房那么多电脑，你怎么知道取哪个
-所以这个时候symbol的作用就显现出来了（上面有什么贴纸的，什么型号的电脑）
-声明定义Symbol的几种方式两个symbol定义完之后比较是不会相等的
-1234567891011121314151617181920&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let hd = Symbol()        console.log(typ ...</div><a class="blog-slider__button" href="2025/12/03/Symbol类型/" alt="Symbol类型">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS运算符和流程控制/" title="JS运算符和流程控制"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fdd8e4c455cbabc958ac1.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS运算符和流程控制/" alt="JS运算符和流程控制">JS运算符和流程控制</a><div class="blog-slider__text">赋值运算符与算术运算符没什么好说的，等号谁都会用
+JavaScript | MDNJavaScript（JS）是一种具有函数优先特性的轻量级、解释型或者说即时编译型的编程语言。虽然作为 Web 页面中的脚本语言被人所熟知，但是它也被用到了很多非浏览器环境中，例如 Node.js、Apache CouchDB、Adobe Acrobat 等。进一步说，JavaScript 是一种基于原型、多范式、单线程的动态语言，并且支持面向对象、命令式和声明式（如函数式编程 ...</div><a class="blog-slider__button" href="2025/12/03/JS基础/" alt="JS基础">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS数组挖掘/" title="JS数组挖掘"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fde3b4c455cbabc958b53.gif" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS数组挖掘/" alt="JS数组挖掘">JS数组挖掘</a><div class="blog-slider__text">数组引用类型分析1234567891011121314151617&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let array = [1,2,3,4]        let hd = array        hd[1]=&amp;quot;houdunren.com&amp;quot;        console.log(array)        console.log(hd)    &amp;lt;/script&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/ht ...</div><a class="blog-slider__button" href="2025/12/03/JS数组挖掘/" alt="JS数组挖掘">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS运算符和流程控制/" title="JS运算符和流程控制"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fdd8e4c455cbabc958ac1.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS运算符和流程控制/" alt="JS运算符和流程控制">JS运算符和流程控制</a><div class="blog-slider__text">赋值运算符与算术运算符没什么好说的，等号谁都会用
 比较运算符注意事项如果一个是字符一个是数字也是可以比较的（&amp;#x3D;&amp;#x3D;）
 &amp;#x3D;&amp;#x3D;&amp;#x3D;是判断值和类型是否相等
-123456789101112131415161718&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let a = 1        let b = &amp;quot;1&amp;quot;        console.log(a == b)    &amp;lt;/scri ...</div><a class="blog-slider__button" href="2025/12/03/JS运算符和流程控制/" alt="JS运算符和流程控制">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS进阶/" title="JS进阶"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd7cd4c455cbabc958616.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS进阶/" alt="JS进阶">JS进阶</a><div class="blog-slider__text">深浅拷贝深拷贝开发中我们经常需要复制一个对象，如果直接用赋值会有下面的问题
+123456789101112131415161718&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let a = 1        let b = &amp;quot;1&amp;quot;        console.log(a == b)    &amp;lt;/scri ...</div><a class="blog-slider__button" href="2025/12/03/JS运算符和流程控制/" alt="JS运算符和流程控制">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/Symbol类型/" title="Symbol类型"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fe0854c455cbabc95a9d2.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/Symbol类型/" alt="Symbol类型">Symbol类型</a><div class="blog-slider__text">Symbol使用场景介绍举个例子，当leader让你去机房取某个电脑的时候，机房那么多电脑，你怎么知道取哪个
+所以这个时候symbol的作用就显现出来了（上面有什么贴纸的，什么型号的电脑）
+声明定义Symbol的几种方式两个symbol定义完之后比较是不会相等的
+1234567891011121314151617181920&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let hd = Symbol()        console.log(typ ...</div><a class="blog-slider__button" href="2025/12/03/Symbol类型/" alt="Symbol类型">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/12/c++++到厌倦/" title="C++++到厌倦"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691c4afd3203f7be00137cb5.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-12</span><a class="blog-slider__title" href="2025/11/12/c++++到厌倦/" alt="C++++到厌倦">C++++到厌倦</a><div class="blog-slider__text">​从今天起，我要开始hello，world。
+往后更要做到，拳打数据结构，脚踢Linux。
+这就是江湖人的风范。
+拼搏百天，我要学希普拉斯普拉斯。
+C++是在C的基础之上，容纳进去了面向对象编程思想，并增加了许多有用的库，以及编程范式 等。
+都说C++是C的补充与延伸，也就是针对C不足的地方进行改进，那么C究竟有哪些不足呢？
+请看码：
+12345678#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt;int rand = 10;int main()&amp;#123;	printf(&amp;quot;%d\n&amp;quot;, rand);	return 0;&amp;#125;
+
+这样的程序乍一看没有问题，但是会报错，报什么样的错呢？
+我们创建了一个全局变量rand，但是在&amp;lt;stdlib.h&amp;gt;的库里包含着rand这个函数，出现了命名冲突（程序员的命名和库出现冲突，库可以是标准库、第三方库等等）
+C语言没办法解决类似这样的命名冲突问题，所以C++提出了namespace来解决。
+在C&amp;#x2F;C++中，变量、函数和类都是大量存在的，这些变量、函数和类 ...</div><a class="blog-slider__button" href="2025/11/12/c++++到厌倦/" alt="C++++到厌倦">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/一站顺序表/" title="一战顺序表"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e7e873203f7be0018f9e1.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/一站顺序表/" alt="一战顺序表">一战顺序表</a><div class="blog-slider__text">线性表线性表是n个具有相同特性的数据元素的有限序列。线性表是一种在实际中广泛使用的数据结构，常见的线性表: 顺序表、链表、栈、队列、字符串…线性表在逻辑上是线性结构，也就说是连续的一条重线。但是在物理结构上并不一定是连续的，线性表在物理上存储时，通常以数组和链式结构的形式存储。
+链表和顺序表都是线性表的一种
+顺序表就像一辆大卡车（和数组差不多），链表就像托马斯小火车
+顺序表概念及结构顺序表是用一段物理地址连续的存储单元依次存储数据元素的线性结构，，一般情况下采用数组存储。在数组上完成数据的增删查改。
+1.静态顺序表:使用定长数组存储元素
+1234567#define N 7typedef int SLDataType;typedef struct SeqList&amp;#123;	SLDataType array[N];   //定长数组	size_t size;           //有效数据个数&amp;#125;SeqList;
+
+2.动态顺序表:使用动态开辟的数组存储
+1234567typedef struct SeqList&amp;#123;	SLDataType* array;  //指向动 ...</div><a class="blog-slider__button" href="2025/11/20/一站顺序表/" alt="一战顺序表">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS进阶/" title="JS进阶"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd7cd4c455cbabc958616.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS进阶/" alt="JS进阶">JS进阶</a><div class="blog-slider__text">深浅拷贝深拷贝开发中我们经常需要复制一个对象，如果直接用赋值会有下面的问题
 深浅拷贝只针对引用类型，深拷贝拷贝的是对象，不是地址
 常见方法：
 
@@ -459,7 +479,31 @@ JavaScript | MDNJavaScript（JS）是一种具有函数优先特性的轻量级�
 lodash&amp;#x2F;cloneDeep
 通过JSON.stringify()实现
 
-递归实现深拷贝12345678910111213141516171819202122232425&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let num = 1        function f ...</div><a class="blog-slider__button" href="2025/12/03/JS进阶/" alt="JS进阶">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS综合案例/" title="JS综合案例"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd3434c455cbabc95804a.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS综合案例/" alt="JS综合案例">JS综合案例</a><div class="blog-slider__text">正则表达式介绍正则表达式是用于匹配字符串中字符组合的模式，在JS中，正则表达式也是对象
+递归实现深拷贝12345678910111213141516171819202122232425&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;    &amp;lt;script&amp;gt;        let num = 1        function f ...</div><a class="blog-slider__button" href="2025/12/03/JS进阶/" alt="JS进阶">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/三战双向循环带头链表/" title="三战双向带头循环链表"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691d90fd3203f7be001802d5.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/三战双向循环带头链表/" alt="三战双向带头循环链表">三战双向带头循环链表</a><div class="blog-slider__text">​一个有趣的排列组合：
+
+
+
+带头
+不带头
+
+
+
+循环
+不循环
+
+
+单向
+双向
+
+
+特点：
+1.无头单向非循环链表: 结构简单，一般不会单独用来存数据。实际中更多是作为其他数据结构的子结构（如哈希桶、图的邻接表…），在笔试面试中出现很多。2.带头双向循环链表: 结构最复杂，一般用在单独存储数据。实际中使用的链表数据结构，都是带头双向循环链表。虽然结构复杂，但是使用代码实现以后会发现结构会带来很多优势，实现反而简单且实用。
+具体实现：
+声明1234567typedef int LTDataType;typedef struct ListNode&amp;#123;	LTDataType data;	struct ListNode* next;	struct ListNode* prev;&amp;#125;ListNode;
+
+初始化1234567ListNode* InitList()&amp;#123;	ListNode* phead = ListCreate(-1);	phead-&amp;gt;next = phead;	phead-&amp;gt;prev = phead;	return phead;&amp;#125;
+
+ ...</div><a class="blog-slider__button" href="2025/11/20/三战双向循环带头链表/" alt="三战双向带头循环链表">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/12/03/JS综合案例/" title="JS综合案例"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692fd3434c455cbabc95804a.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-12-03</span><a class="blog-slider__title" href="2025/12/03/JS综合案例/" alt="JS综合案例">JS综合案例</a><div class="blog-slider__text">正则表达式介绍正则表达式是用于匹配字符串中字符组合的模式，在JS中，正则表达式也是对象
 通常用来查找，替换那些符合正则表达式的文本
 就是筛选出符合条件的一类人
 比如说
@@ -481,7 +525,30 @@ test()方法可以查看正则表达式与指定的字符串是否匹配
 1regObj.test(被检测的字符串)
 
 这是使用实例：
-123456789101112131415&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot ...</div><a class="blog-slider__button" href="2025/12/03/JS综合案例/" alt="JS综合案例">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/19/linux指令/" title="Linux指令"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691d89f33203f7be0017e475.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-19</span><a class="blog-slider__title" href="2025/11/19/linux指令/" alt="Linux指令">Linux指令</a><div class="blog-slider__text">快捷键
+123456789101112131415&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot ...</div><a class="blog-slider__button" href="2025/12/03/JS综合案例/" alt="JS综合案例">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/二叉树序曲/" title="二叉树序曲"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691eafaa3203f7be00197fed.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/二叉树序曲/" alt="二叉树序曲">二叉树序曲</a><div class="blog-slider__text">​已经学过很多数据结构了，我们需要明晰两个概念：
+
+逻辑结构：我们想象出来的结构
+物理结构：内存中实在存储的结构
+
+线性表是逻辑结构的描述。树是一种非线性的数据结构，它是由n (n&amp;gt;&amp;#x3D;0) 个有限结点组成的一个具有层次关系的集合。把它叫做树是因为它看起来像一棵倒挂的树（根朝上，叶朝下）有一个特殊的结点，称为根结点，根结点没有前驱结点
+除根结点外，其余结点被分成M(M&amp;gt;0)个互不相交的集合T1、T2、……Tm，其中每一个集合Ti(1&amp;lt;&amp;#x3D; i&amp;lt;&amp;#x3D;m)又是一棵结构与树类似的子树。每棵子树的根结点有且只有一个前驱，可以有0个或多个后继因此，树是递归定义的，任何一棵树都会被拆解成根和子树。tips: 树形结构中，子树之间不能有交集，否则就不是树形结构
+概念
+结点的度: 一个结点含有的子树的个数称为该结点的度; 如上图: A的度为6
+叶结点或终端结点: 度为0的结点称为叶结点; 如上图: B、C、H、l…等结点为叶结点
+非终端结点或分支结点: 度不为0的结点; 如上图: D、E、F、G.等结点为分支结点
+双亲结点或父结点: 若一个结点含有子结点 ...</div><a class="blog-slider__button" href="2025/11/20/二叉树序曲/" alt="二叉树序曲">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/二叉树间奏/" title="二叉树间奏"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691eb4eb3203f7be00199024.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/二叉树间奏/" alt="二叉树间奏">二叉树间奏</a><div class="blog-slider__text">​已经学习过了二叉树的基础知识，那么间奏部分就来感受一下二叉树部分的OJ题吧。
+单值二叉树
+单值二叉树很多人第一个想到的做法就是递归遍历整棵树看各结点的值是否相等，但是麻烦了许多。
+对于不方便遍历的题，我们最好使用分治的思想去做
+以这道题为例，可以
+
+检查每个结点和他的孩子，分成三部分：
+1.自己
+2.左子树
+3.右子树
+
+因为相等具有传递性，所以我们可以这样做。
+12345678910111213141516bool isUnivalTree(struct TreeNode* root) &amp;#123;    if(root==NULL)    &amp;#123;        return true;    &amp;#125;    if(root-&amp;gt;left&amp;amp;&amp;amp;root-&amp;gt;left-&amp;gt;val!=root-&amp;gt;val)    &amp;#123;        return false;    &amp;#125;     if(root-&amp;gt;right&amp;amp;&amp;amp;root-&amp;gt;right-&amp;gt;val!=root-&amp;gt;val)    &amp;#123;   ...</div><a class="blog-slider__button" href="2025/11/20/二叉树间奏/" alt="二叉树间奏">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/19/linux指令/" title="Linux指令"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691d89f33203f7be0017e475.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-19</span><a class="blog-slider__title" href="2025/11/19/linux指令/" alt="Linux指令">Linux指令</a><div class="blog-slider__text">快捷键
 
 
 Alt+Enter
@@ -521,74 +588,7 @@ rm删除东西（目录、可执行程序、文件…）
 在删除目录时，我们会发现rm删除不了：
 这个时候，用rm -r就可以删除了
 rm -r递归式删除目录（把所有子目录也都删掉），也会执行额外询问（可以挑着删）
-不想让 ...</div><a class="blog-slider__button" href="2025/11/19/linux指令/" alt="Linux指令">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/一站顺序表/" title="一战顺序表"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e7e873203f7be0018f9e1.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/一站顺序表/" alt="一战顺序表">一战顺序表</a><div class="blog-slider__text">线性表线性表是n个具有相同特性的数据元素的有限序列。线性表是一种在实际中广泛使用的数据结构，常见的线性表: 顺序表、链表、栈、队列、字符串…线性表在逻辑上是线性结构，也就说是连续的一条重线。但是在物理结构上并不一定是连续的，线性表在物理上存储时，通常以数组和链式结构的形式存储。
-链表和顺序表都是线性表的一种
-顺序表就像一辆大卡车（和数组差不多），链表就像托马斯小火车
-顺序表概念及结构顺序表是用一段物理地址连续的存储单元依次存储数据元素的线性结构，，一般情况下采用数组存储。在数组上完成数据的增删查改。
-1.静态顺序表:使用定长数组存储元素
-1234567#define N 7typedef int SLDataType;typedef struct SeqList&amp;#123;	SLDataType array[N];   //定长数组	size_t size;           //有效数据个数&amp;#125;SeqList;
-
-2.动态顺序表:使用动态开辟的数组存储
-1234567typedef struct SeqList&amp;#123;	SLDataType* array;  //指向动 ...</div><a class="blog-slider__button" href="2025/11/20/一站顺序表/" alt="一战顺序表">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/二叉树间奏/" title="二叉树间奏"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691eb4eb3203f7be00199024.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/二叉树间奏/" alt="二叉树间奏">二叉树间奏</a><div class="blog-slider__text">​已经学习过了二叉树的基础知识，那么间奏部分就来感受一下二叉树部分的OJ题吧。
-单值二叉树
-单值二叉树很多人第一个想到的做法就是递归遍历整棵树看各结点的值是否相等，但是麻烦了许多。
-对于不方便遍历的题，我们最好使用分治的思想去做
-以这道题为例，可以
-
-检查每个结点和他的孩子，分成三部分：
-1.自己
-2.左子树
-3.右子树
-
-因为相等具有传递性，所以我们可以这样做。
-12345678910111213141516bool isUnivalTree(struct TreeNode* root) &amp;#123;    if(root==NULL)    &amp;#123;        return true;    &amp;#125;    if(root-&amp;gt;left&amp;amp;&amp;amp;root-&amp;gt;left-&amp;gt;val!=root-&amp;gt;val)    &amp;#123;        return false;    &amp;#125;     if(root-&amp;gt;right&amp;amp;&amp;amp;root-&amp;gt;right-&amp;gt;val!=root-&amp;gt;val)    &amp;#123;   ...</div><a class="blog-slider__button" href="2025/11/20/二叉树间奏/" alt="二叉树间奏">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/二叉树序曲/" title="二叉树序曲"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691eafaa3203f7be00197fed.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/二叉树序曲/" alt="二叉树序曲">二叉树序曲</a><div class="blog-slider__text">​已经学过很多数据结构了，我们需要明晰两个概念：
-
-逻辑结构：我们想象出来的结构
-物理结构：内存中实在存储的结构
-
-线性表是逻辑结构的描述。树是一种非线性的数据结构，它是由n (n&amp;gt;&amp;#x3D;0) 个有限结点组成的一个具有层次关系的集合。把它叫做树是因为它看起来像一棵倒挂的树（根朝上，叶朝下）有一个特殊的结点，称为根结点，根结点没有前驱结点
-除根结点外，其余结点被分成M(M&amp;gt;0)个互不相交的集合T1、T2、……Tm，其中每一个集合Ti(1&amp;lt;&amp;#x3D; i&amp;lt;&amp;#x3D;m)又是一棵结构与树类似的子树。每棵子树的根结点有且只有一个前驱，可以有0个或多个后继因此，树是递归定义的，任何一棵树都会被拆解成根和子树。tips: 树形结构中，子树之间不能有交集，否则就不是树形结构
-概念
-结点的度: 一个结点含有的子树的个数称为该结点的度; 如上图: A的度为6
-叶结点或终端结点: 度为0的结点称为叶结点; 如上图: B、C、H、l…等结点为叶结点
-非终端结点或分支结点: 度不为0的结点; 如上图: D、E、F、G.等结点为分支结点
-双亲结点或父结点: 若一个结点含有子结点 ...</div><a class="blog-slider__button" href="2025/11/20/二叉树序曲/" alt="二叉树序曲">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/三战双向循环带头链表/" title="三战双向带头循环链表"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691d90fd3203f7be001802d5.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/三战双向循环带头链表/" alt="三战双向带头循环链表">三战双向带头循环链表</a><div class="blog-slider__text">​一个有趣的排列组合：
-
-
-
-带头
-不带头
-
-
-
-循环
-不循环
-
-
-单向
-双向
-
-
-特点：
-1.无头单向非循环链表: 结构简单，一般不会单独用来存数据。实际中更多是作为其他数据结构的子结构（如哈希桶、图的邻接表…），在笔试面试中出现很多。2.带头双向循环链表: 结构最复杂，一般用在单独存储数据。实际中使用的链表数据结构，都是带头双向循环链表。虽然结构复杂，但是使用代码实现以后会发现结构会带来很多优势，实现反而简单且实用。
-具体实现：
-声明1234567typedef int LTDataType;typedef struct ListNode&amp;#123;	LTDataType data;	struct ListNode* next;	struct ListNode* prev;&amp;#125;ListNode;
-
-初始化1234567ListNode* InitList()&amp;#123;	ListNode* phead = ListCreate(-1);	phead-&amp;gt;next = phead;	phead-&amp;gt;prev = phead;	return phead;&amp;#125;
-
- ...</div><a class="blog-slider__button" href="2025/11/20/三战双向循环带头链表/" alt="三战双向带头循环链表">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/二战单链表/" title="二战单链表"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e7ff93203f7be0018fce6.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/二战单链表/" alt="二战单链表">二战单链表</a><div class="blog-slider__text">​链表也是一种线性表，适用于需要频繁插入删除数据的情况
-链表在逻辑上是连续的，在物理上是不连续的
-链表的内存结构是不连续的内存空间，是将一组零散的内存块串联，，每个内存块被称为结点（Node），结点分为两部分：数据域和指针域。
-下面实现单链表（不带头）
-定义结点1234567//single listtypedef int SLNDataType;typedef struct SListNode&amp;#123;	SLNDataType val;	struct SListNode* next;&amp;#125;SLNode;
-
-删除尾删
-声明
-形参是实参的一份临时拷贝，对形参的修改不会影响实参，故这里传二级指针
-1void SLPopBack(SLNode** pphead);
-
-实现
-1234567891011121314151617181920212223void SLPopBack(SLNode** pphead)&amp;#123;	if ((*pphead) == NULL)	&amp;#123;		return;	&amp;#125;	if ((*pphead)-&amp;gt;next == NULL)	&amp;#123 ...</div><a class="blog-slider__button" href="2025/11/20/二战单链表/" alt="二战单链表">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/五战队列/" title="五战队列"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e8dbd3203f7be001919c9.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/五战队列/" alt="五战队列">五战队列</a><div class="blog-slider__text">​什么是队列呢？
+不想让 ...</div><a class="blog-slider__button" href="2025/11/19/linux指令/" alt="Linux指令">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/五战队列/" title="五战队列"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e8dbd3203f7be001919c9.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/五战队列/" alt="五战队列">五战队列</a><div class="blog-slider__text">​什么是队列呢？
 下定义：
 队列是只允许在一端进行插入数据操作，在另一端进行删除数据操作的特殊线性表，队列具有先进先出 (First In First Out)的特点。
 入队列：进行插入操作的一端称为队尾。
@@ -601,7 +601,19 @@ rm -r递归式删除目录（把所有子目录也都删掉），也会执行额
 由于在后面初始化队列等等操作中，需要改变队头队尾元素，需要用到二级指针，在此处为了方便多声明一个结构体代表整个队列：
 123456typedef struct Queue&amp;#123;	QNode* phead;	QNode* ptail;	int size;&amp;#125;Queue;
 
-初始化123456void QueueInit(Queue* pq)&amp;#123;	ass ...</div><a class="blog-slider__button" href="2025/11/20/五战队列/" alt="五战队列">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/内存分配/" title="爱情呼叫转移，内存分配管理"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929537e7f8e1c737822b8f0.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/内存分配/" alt="爱情呼叫转移，内存分配管理">爱情呼叫转移，内存分配管理</a><div class="blog-slider__text">​真是太逊了
+初始化123456void QueueInit(Queue* pq)&amp;#123;	ass ...</div><a class="blog-slider__button" href="2025/11/20/五战队列/" alt="五战队列">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/二战单链表/" title="二战单链表"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e7ff93203f7be0018fce6.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/二战单链表/" alt="二战单链表">二战单链表</a><div class="blog-slider__text">​链表也是一种线性表，适用于需要频繁插入删除数据的情况
+链表在逻辑上是连续的，在物理上是不连续的
+链表的内存结构是不连续的内存空间，是将一组零散的内存块串联，，每个内存块被称为结点（Node），结点分为两部分：数据域和指针域。
+下面实现单链表（不带头）
+定义结点1234567//single listtypedef int SLNDataType;typedef struct SListNode&amp;#123;	SLNDataType val;	struct SListNode* next;&amp;#125;SLNode;
+
+删除尾删
+声明
+形参是实参的一份临时拷贝，对形参的修改不会影响实参，故这里传二级指针
+1void SLPopBack(SLNode** pphead);
+
+实现
+1234567891011121314151617181920212223void SLPopBack(SLNode** pphead)&amp;#123;	if ((*pphead) == NULL)	&amp;#123;		return;	&amp;#125;	if ((*pphead)-&amp;gt;next == NULL)	&amp;#123 ...</div><a class="blog-slider__button" href="2025/11/20/二战单链表/" alt="二战单链表">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/内存分配/" title="爱情呼叫转移，内存分配管理"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929537e7f8e1c737822b8f0.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/内存分配/" alt="爱情呼叫转移，内存分配管理">爱情呼叫转移，内存分配管理</a><div class="blog-slider__text">​真是太逊了
 一点都不好嘛
 在学完环境变量及地址空间
 知道虚拟分配和实际物理内存的映射之后感觉更通透了
@@ -630,12 +642,21 @@ A
 2.top K问题（找出一组数据中最大&amp;#x2F;最小的K个值）
 tips：堆的功能是选数
 实现声明
-1234567typedef int HPDataType;typedef struct Heap&amp;#123;	HPDataType* a;	int size;	int capacity;&amp;#125;HP; ...</div><a class="blog-slider__button" href="2025/11/20/六战堆/" alt="六战堆">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/初始CSS/" title="初识CSS"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929613f7f8e1c737822deec.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/初始CSS/" alt="初识CSS">初识CSS</a><div class="blog-slider__text">​CSS是控制页面展示效果的（能够对网页中元素位置的排版进行像素级精确控制, 实现美化页面的效果. 能够做到页面的样式和结 构分离）
-就和化妆一样
-HTML是决定页面结构的
-先写一个标签吧
-style
-123456789101112131415161718&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;    &amp;lt;style&amp;gt;        p&amp;#123;            color: red;            font-size: 40px;        &amp;#125;    &amp;lt;/style&amp;gt;&amp;lt;/head&amp;g ...</div><a class="blog-slider__button" href="2025/11/28/初始CSS/" alt="初识CSS">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/初识HTML/" title="速通HTML"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691eb46a3203f7be00198f16.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/初识HTML/" alt="速通HTML">速通HTML</a><div class="blog-slider__text">​什么是HTML呢？
+1234567typedef int HPDataType;typedef struct Heap&amp;#123;	HPDataType* a;	int size;	int capacity;&amp;#125;HP; ...</div><a class="blog-slider__button" href="2025/11/20/六战堆/" alt="六战堆">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/四战栈/" title="四战栈"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e833d3203f7be001904b0.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/四战栈/" alt="四战栈">四战栈</a><div class="blog-slider__text">​栈是什么呢？下个定义：栈是一种特殊的线性表
+进行数据插入和删除操作的一端 称为栈顶，另一端称为栈底。栈中的数据元素遵守后进先出（Last In First Out）的原则。
+压栈：栈的插入操作叫做进栈&amp;#x2F;压栈&amp;#x2F;入栈，入数据在栈顶。
+出栈：栈的删除操作叫做出栈。出数据也在栈顶。
+栈的具体实现有两种选择：用顺序表（顺序栈）或者链表（链栈）。相对链表而言，顺序表的结构实现更优一些：数组在尾上插入数据的代价比较小。
+顺序栈声明1234567typedef int STDataType;typedef struct Stack&amp;#123;	int* a;	int top;        //栈顶	int capacity;   //容量&amp;#125;ST;
+
+初始化栈此时需要明确top的含义，是指向栈顶元素还是指向栈顶元素的下一个元素，若指向栈顶元素，则初始化不开辟空间时应把top置为-1，若指向栈顶元素的下一个元素，则将top初始化为0。此处以top指向栈顶元素的下一个元素为例：
+12345678void STInit(ST* pst)&amp;#123;	assert(pst);	 ...</div><a class="blog-slider__button" href="2025/11/20/四战栈/" alt="四战栈">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/学成在线案例/" title="学成在线案例"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692968057f8e1c737822fea0.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/学成在线案例/" alt="学成在线案例">学成在线案例</a><div class="blog-slider__text">盒子阴影圆角边框已经介绍过哩，现在先介绍一下盒子阴影的效果如何实现
+CSS3中新增了盒子阴影，可以使用box-shadow属性为盒子添加阴影
+这是固定的语法：
+1text-shadow: h-shadow v-shadow blur color;
+
+简单的给537添加一下阴影：
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp; ...</div><a class="blog-slider__button" href="2025/11/28/学成在线案例/" alt="学成在线案例">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/初识HTML/" title="速通HTML"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691eb46a3203f7be00198f16.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/初识HTML/" alt="速通HTML">速通HTML</a><div class="blog-slider__text">​什么是HTML呢？
 HTML是超文本标记语言，HTML代码是由“标签”构成的
 
 超文本：文本、声音、图片、视频、表格、链接
@@ -659,21 +680,21 @@ HTML可以先从编写第一个页面开始
 1&amp;lt;body id=&amp;quot;myId&amp;quot;&amp;gt;hello&amp;lt;/body&amp;gt;
 
 一个标准的html的结构怎么样呢？
-12345678&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;title&amp;gt;第一个页面&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp; ...</div><a class="blog-slider__button" href="2025/11/20/初识HTML/" alt="速通HTML">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/四战栈/" title="四战栈"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e833d3203f7be001904b0.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/四战栈/" alt="四战栈">四战栈</a><div class="blog-slider__text">​栈是什么呢？下个定义：栈是一种特殊的线性表
-进行数据插入和删除操作的一端 称为栈顶，另一端称为栈底。栈中的数据元素遵守后进先出（Last In First Out）的原则。
-压栈：栈的插入操作叫做进栈&amp;#x2F;压栈&amp;#x2F;入栈，入数据在栈顶。
-出栈：栈的删除操作叫做出栈。出数据也在栈顶。
-栈的具体实现有两种选择：用顺序表（顺序栈）或者链表（链栈）。相对链表而言，顺序表的结构实现更优一些：数组在尾上插入数据的代价比较小。
-顺序栈声明1234567typedef int STDataType;typedef struct Stack&amp;#123;	int* a;	int top;        //栈顶	int capacity;   //容量&amp;#125;ST;
+12345678&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;title&amp;gt;第一个页面&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp; ...</div><a class="blog-slider__button" href="2025/11/20/初识HTML/" alt="速通HTML">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/初始CSS/" title="初识CSS"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929613f7f8e1c737822deec.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/初始CSS/" alt="初识CSS">初识CSS</a><div class="blog-slider__text">​CSS是控制页面展示效果的（能够对网页中元素位置的排版进行像素级精确控制, 实现美化页面的效果. 能够做到页面的样式和结 构分离）
+就和化妆一样
+HTML是决定页面结构的
+先写一个标签吧
+style
+123456789101112131415161718&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;    &amp;lt;style&amp;gt;        p&amp;#123;            color: red;            font-size: 40px;        &amp;#125;    &amp;lt;/style&amp;gt;&amp;lt;/head&amp;g ...</div><a class="blog-slider__button" href="2025/11/28/初始CSS/" alt="初识CSS">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/19/数据在内存中的存储/" title="数据在内存中的存储"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691d90f53203f7be001802d4.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-19</span><a class="blog-slider__title" href="2025/11/19/数据在内存中的存储/" alt="数据在内存中的存储">数据在内存中的存储</a><div class="blog-slider__text">整数在内存中的存储整数的二进制表示方式有三种：原码，反码，补码，三种方法均有符号位（0：正，1：负）和数值位，最高位为符号位，其余都为数值位，正数的原码，反码，补码相同。负数的原码直接将数值按正负数形式翻译成二进制，反码为原码的符号位不变，其余按位取反，补码为反码+1。对于整形来说，数据存放在内存中为补码，但是。。。为什么呢？
+原因：在计算机系统中，数值一律用补码表示和存储，使用补码可以将数值位与数值域统一处理，同时，也可将加减法同时处理（CPU只有加法器），此外，补码与原码相互转换，其运算过程相同，不需要额外的硬件电路。
+大小端字节序判断一、概念什么是字节序嘞？名表其意：字节的顺序。当数值超过1个字节时，存储在内存中的顺序就需要确定，例：0x11223344
+在大端字节序（将一个数值的低位字节序的内容存到高地址处，高位字节序的内容存放在低地址处）下，它是这样存储的：
 
-初始化栈此时需要明确top的含义，是指向栈顶元素还是指向栈顶元素的下一个元素，若指向栈顶元素，则初始化不开辟空间时应把top置为-1，若指向栈顶元素的下一个元素，则将top初始化为0。此处以top指向栈顶元素的下一个元素为例：
-12345678void STInit(ST* pst)&amp;#123;	assert(pst);	 ...</div><a class="blog-slider__button" href="2025/11/20/四战栈/" alt="四战栈">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/28/学成在线案例/" title="学成在线案例"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692968057f8e1c737822fea0.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-28</span><a class="blog-slider__title" href="2025/11/28/学成在线案例/" alt="学成在线案例">学成在线案例</a><div class="blog-slider__text">盒子阴影圆角边框已经介绍过哩，现在先介绍一下盒子阴影的效果如何实现
-CSS3中新增了盒子阴影，可以使用box-shadow属性为盒子添加阴影
-这是固定的语法：
-1text-shadow: h-shadow v-shadow blur color;
+低地址      11  22  33  44             高地址
 
-简单的给537添加一下阴影：
-1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;    &amp;lt;title&amp; ...</div><a class="blog-slider__button" href="2025/11/28/学成在线案例/" alt="学成在线案例">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/19/时空复杂度/" title="时空复杂度"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691d8d143203f7be0017f197.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-19</span><a class="blog-slider__title" href="2025/11/19/时空复杂度/" alt="时空复杂度">时空复杂度</a><div class="blog-slider__text">算法效率有的代码很简洁
+在小端字节序（将一个数值的低位字节序的内容存到低地址处，高位字节序的内容存放在高地址处）下，它是这样存储的：
+
+低地址       44 ...</div><a class="blog-slider__button" href="2025/11/19/数据在内存中的存储/" alt="数据在内存中的存储">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/19/时空复杂度/" title="时空复杂度"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691d8d143203f7be0017f197.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-19</span><a class="blog-slider__title" href="2025/11/19/时空复杂度/" alt="时空复杂度">时空复杂度</a><div class="blog-slider__text">算法效率有的代码很简洁
 比如递归求斐波那契数列：
 1234567891011long long Fib(int N)&amp;#123;	if (N &amp;lt; 3)	&amp;#123;		return 1;	&amp;#125;	else	&amp;#123;		return Fib(N - 1) + Fib(N - 2);	&amp;#125;&amp;#125;
 
@@ -684,28 +705,7 @@ CSS3中新增了盒子阴影，可以使用box-shadow属性为盒子添加阴影
 算法的好坏，一般是从时间和空间两个维度来衡量的，即时间复杂度和空间复杂度。时间复杂度主要衡量一个算法的运行快慢，而空间复杂度主要衡量一个算法运行所需要的额外空间。
 在计算机发展的早期，计算机的存储容量很小。所以对空间复杂度很是在乎。但是经过计算机行业的迅速发展，计算机的存储容量已经达到了很高的程度。所以我们如今已经不再需要特别关注一个算法的空间复杂度。
 时间复杂度定义: 算法的时间复杂度是一个函数，它定量描述了该算法的运行时间。
-一个算法执行所耗费的时间，从理论上说，是不能算出来的，只有程序跑起来才知道。 ...</div><a class="blog-slider__button" href="2025/11/19/时空复杂度/" alt="时空复杂度">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/12/c++++到厌倦/" title="C++++到厌倦"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691c4afd3203f7be00137cb5.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-12</span><a class="blog-slider__title" href="2025/11/12/c++++到厌倦/" alt="C++++到厌倦">C++++到厌倦</a><div class="blog-slider__text">​从今天起，我要开始hello，world。
-往后更要做到，拳打数据结构，脚踢Linux。
-这就是江湖人的风范。
-拼搏百天，我要学希普拉斯普拉斯。
-C++是在C的基础之上，容纳进去了面向对象编程思想，并增加了许多有用的库，以及编程范式 等。
-都说C++是C的补充与延伸，也就是针对C不足的地方进行改进，那么C究竟有哪些不足呢？
-请看码：
-12345678#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt;int rand = 10;int main()&amp;#123;	printf(&amp;quot;%d\n&amp;quot;, rand);	return 0;&amp;#125;
-
-这样的程序乍一看没有问题，但是会报错，报什么样的错呢？
-我们创建了一个全局变量rand，但是在&amp;lt;stdlib.h&amp;gt;的库里包含着rand这个函数，出现了命名冲突（程序员的命名和库出现冲突，库可以是标准库、第三方库等等）
-C语言没办法解决类似这样的命名冲突问题，所以C++提出了namespace来解决。
-在C&amp;#x2F;C++中，变量、函数和类都是大量存在的，这些变量、函数和类 ...</div><a class="blog-slider__button" href="2025/11/12/c++++到厌倦/" alt="C++++到厌倦">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/19/数据在内存中的存储/" title="数据在内存中的存储"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691d90f53203f7be001802d4.jpg" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-19</span><a class="blog-slider__title" href="2025/11/19/数据在内存中的存储/" alt="数据在内存中的存储">数据在内存中的存储</a><div class="blog-slider__text">整数在内存中的存储整数的二进制表示方式有三种：原码，反码，补码，三种方法均有符号位（0：正，1：负）和数值位，最高位为符号位，其余都为数值位，正数的原码，反码，补码相同。负数的原码直接将数值按正负数形式翻译成二进制，反码为原码的符号位不变，其余按位取反，补码为反码+1。对于整形来说，数据存放在内存中为补码，但是。。。为什么呢？
-原因：在计算机系统中，数值一律用补码表示和存储，使用补码可以将数值位与数值域统一处理，同时，也可将加减法同时处理（CPU只有加法器），此外，补码与原码相互转换，其运算过程相同，不需要额外的硬件电路。
-大小端字节序判断一、概念什么是字节序嘞？名表其意：字节的顺序。当数值超过1个字节时，存储在内存中的顺序就需要确定，例：0x11223344
-在大端字节序（将一个数值的低位字节序的内容存到高地址处，高位字节序的内容存放在低地址处）下，它是这样存储的：
-
-低地址      11  22  33  44             高地址
-
-在小端字节序（将一个数值的低位字节序的内容存到低地址处，高位字节序的内容存放在高地址处）下，它是这样存储的：
-
-低地址       44 ...</div><a class="blog-slider__button" href="2025/11/19/数据在内存中的存储/" alt="数据在内存中的存储">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/栈和队列的纠缠之缘/" title="栈和队列的纠缠之缘"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e8f003203f7be00191c4c.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/栈和队列的纠缠之缘/" alt="栈和队列的纠缠之缘">栈和队列的纠缠之缘</a><div class="blog-slider__text">​## 用队列实现栈
+一个算法执行所耗费的时间，从理论上说，是不能算出来的，只有程序跑起来才知道。 ...</div><a class="blog-slider__button" href="2025/11/19/时空复杂度/" alt="时空复杂度">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/11/20/栈和队列的纠缠之缘/" title="栈和队列的纠缠之缘"><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691e8f003203f7be00191c4c.png" alt="图片" onerror="this.src=undefined; this.onerror = null;"></a><div class="blog-slider__content"><span class="blog-slider__code">2025-11-20</span><a class="blog-slider__title" href="2025/11/20/栈和队列的纠缠之缘/" alt="栈和队列的纠缠之缘">栈和队列的纠缠之缘</a><div class="blog-slider__text">​## 用队列实现栈
 
 一个很有意思的题、和一个很好笑的评论哈哈哈哈：
 
@@ -738,7 +738,7 @@ C语言没办法解决类似这样的命名冲突问题，所以C++提出了name
 
 
 从小到大捏 ​
-JS垃圾回收机制内存泄漏是指程序中分 ...</div><a class="blog-slider__button" href="2025/12/03/箭头函数作用域/" alt="JS箭头函数，作用域及闭包">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div><div id="topPostGroup"><div class="top-group-list-item"><div class="post_cover left_radius"><a href="2025/11/19/链表和递归的双向奔赴/" title="链表与递归的双向奔赴"><span class="top-group-text">荐</span><img class="post_bg" alt="链表与递归的双向奔赴" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691c4c333203f7be00138497.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="2025/11/19/链表和递归的双向奔赴/" title="链表与递归的双向奔赴">链表与递归的双向奔赴</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="2025/11/28/类和对象3/" title="类和对象三部曲（three）"><span class="top-group-text">荐</span><img class="post_bg" alt="类和对象三部曲（three）" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929596cb4e23f08080ab0f9.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="2025/11/28/类和对象3/" title="类和对象三部曲（three）">类和对象三部曲（three）</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="2025/11/28/类和对象2/" title="类和对象三部曲（two）"><span class="top-group-text">荐</span><img class="post_bg" alt="类和对象三部曲（two）" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692955187f8e1c737822ba7f.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="2025/11/28/类和对象2/" title="类和对象三部曲（two）">类和对象三部曲（two）</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="2025/11/28/类和对象1/" title="类和对象三部曲（one）"><span class="top-group-text">荐</span><img class="post_bg" alt="类和对象三部曲（one）" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929576d7f8e1c737822d9c1.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="2025/11/28/类和对象1/" title="类和对象三部曲（one）">类和对象三部曲（one）</a></div></div><div class="top-group-list-none"></div><div class="top-group-list-none"></div><div class="top-group-list-none"></div></div></div></div></div><script>function initBlogSlider() {
+JS垃圾回收机制内存泄漏是指程序中分 ...</div><a class="blog-slider__button" href="2025/12/03/箭头函数作用域/" alt="JS箭头函数，作用域及闭包">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div><div id="topPostGroup"><div class="top-group-list-item"><div class="post_cover left_radius"><a href="2025/11/19/链表和递归的双向奔赴/" title="链表与递归的双向奔赴"><span class="top-group-text">荐</span><img class="post_bg" alt="链表与递归的双向奔赴" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/691c4c333203f7be00138497.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="2025/11/19/链表和递归的双向奔赴/" title="链表与递归的双向奔赴">链表与递归的双向奔赴</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="2025/11/28/类和对象2/" title="类和对象三部曲（two）"><span class="top-group-text">荐</span><img class="post_bg" alt="类和对象三部曲（two）" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/692955187f8e1c737822ba7f.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="2025/11/28/类和对象2/" title="类和对象三部曲（two）">类和对象三部曲（two）</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="2025/11/28/类和对象3/" title="类和对象三部曲（three）"><span class="top-group-text">荐</span><img class="post_bg" alt="类和对象三部曲（three）" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929596cb4e23f08080ab0f9.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="2025/11/28/类和对象3/" title="类和对象三部曲（three）">类和对象三部曲（three）</a></div></div><div class="top-group-list-item"><div class="post_cover left_radius"><a href="2025/11/28/类和对象1/" title="类和对象三部曲（one）"><span class="top-group-text">荐</span><img class="post_bg" alt="类和对象三部曲（one）" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/6929576d7f8e1c737822d9c1.jpg" onerror="this.src=undefined; this.onerror = null;"></a></div><div class="top-group-info"><a class="article-title" href="2025/11/28/类和对象1/" title="类和对象三部曲（one）">类和对象三部曲（one）</a></div></div><div class="top-group-list-none"></div><div class="top-group-list-none"></div><div class="top-group-list-none"></div></div></div></div></div><script>function initBlogSlider() {
   var swiper = new Swiper(".blog-slider", {
     passiveListeners: true,
     spaceBetween: 30,
@@ -777,9 +777,9 @@ setTimeout(()=>{
       </a>
     </div>
     
-    <div class="catalog-list-item" id="/categories/Linux/">
-      <a href="/categories/Linux/">
-        Linux
+    <div class="catalog-list-item" id="/categories/C/">
+      <a href="/categories/C/">
+        C++
       </a>
     </div>
     
@@ -789,9 +789,9 @@ setTimeout(()=>{
       </a>
     </div>
     
-    <div class="catalog-list-item" id="/categories/C/">
-      <a href="/categories/C/">
-        C++
+    <div class="catalog-list-item" id="/categories/Linux/">
+      <a href="/categories/Linux/">
+        Linux
       </a>
     </div>
     
