@@ -537,6 +537,28 @@ if (true) {
   // run replacement after initial load and on PJAX navigations
   window.addEventListener('load', () => setTimeout(replaceAvatarHostToCravatar, 600))
   document.addEventListener('pjax:complete', () => setTimeout(replaceAvatarHostToCravatar, 400))
+  // Emoji load fallback: if an emoji image from emojiCDN fails, try PNG fallback on Twemoji CDN
+  const emojiCDN = 'https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/'
+  const emojiFallbackBase = 'https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/72x72/'
+  window.addEventListener('error', function (ev) {
+    const t = ev.target
+    if (!t || t.tagName !== 'IMG') return
+    try {
+      const src = t.getAttribute('src') || ''
+      if (!src) return
+      // only handle emoji CDNs configured in theme
+      if (emojiCDN && src.indexOf(emojiCDN) === 0) {
+        // replace .svg -> .png fallback
+        const name = src.split('/').pop()
+        if (!name) return
+        const pngName = name.replace(/\.svg$/i, '.png')
+        const fallback = emojiFallbackBase + pngName
+        if (t.src !== fallback) t.src = fallback
+      }
+    } catch (e) {
+      // ignore
+    }
+  }, true)
 })()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script src="https://cdn.cbd.int/blueimp-md5@2.19.0/js/md5.min.js"></script><script>window.addEventListener('load', () => {
   const changeContent = (content) => {
     if (content === '') return content
