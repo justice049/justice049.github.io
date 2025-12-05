@@ -60,7 +60,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-12-04 16:53:27',
+  postUpdate: '2025-12-05 14:44:25',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -245,15 +245,15 @@ if (true) {
       </a>
     </div>
     
-    <div class="catalog-list-item" id="/categories/Linux/">
-      <a href="/categories/Linux/">
-        Linux
-      </a>
-    </div>
-    
     <div class="catalog-list-item" id="/categories/数据结构/">
       <a href="/categories/数据结构/">
         数据结构
+      </a>
+    </div>
+    
+    <div class="catalog-list-item" id="/categories/Linux/">
+      <a href="/categories/Linux/">
+        Linux
       </a>
     </div>
     
@@ -360,8 +360,8 @@ C语言没办法解决类似这样的命名冲突问题，所以C++提出了name
 
   const getIcon = (icon, mail) => {
     if (icon) return icon
-    let defaultIcon = '?d=mm'
-    let iconUrl = `https://gravatar.loli.net/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
+    let defaultIcon = '?d=monsterid'
+    let iconUrl = `https://cravatar.cn/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
     return iconUrl
   }
 
@@ -393,7 +393,7 @@ C语言没办法解决类似这样的命名冲突问题，所以C++提出了name
   }
 
   const getComment = () => {
-    const serverURL = 'https://Tv1tQeDz.api.lncldglobal.com'
+    const serverURL = 'https://tv1tqedz.lc-cn-n1-shared.com'
 
     var settings = {
       "method": "GET",

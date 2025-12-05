@@ -463,10 +463,12 @@ if (true) {
       el: '#vcomment',
       appId: 'Tv1tQeDzMHFGtyxLwEIKzU8N-gzGzoHsz',
       appKey: 'EpD8w2JukK76zPmKRM0Va8fC',
-      avatar: 'mm',
-      serverURLs: '',
+      avatar: 'monsterid',
+      avatarCDN: 'https://cravatar.cn/avatar/',
+      serverURLs: 'https://tv1tqedz.lc-cn-n1-shared.com',
       emojiCDN: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/',
       emojiMaps: {"tv_doge":"1f415.svg","tv_亲亲":"1f48b.svg","tv_偷笑":"1f604.svg","tv_再见":"1f44b.svg","tv_冷漠":"1f610.svg","tv_发怒":"1f624.svg","tv_发财":"1f4b0.svg","tv_可爱":"1f60a.svg","tv_吐血":"1f4a5.svg","tv_呆":"1f635.svg","tv_呕吐":"1f92e.svg","tv_困":"1f634.svg","tv_坏笑":"1f608.svg","tv_大佬":"1f60e.svg","tv_大哭":"1f62d.svg","tv_委屈":"1f625.svg","tv_害羞":"1f633.svg","tv_尴尬":"1f605.svg","tv_微笑":"1f603.svg","tv_思考":"1f914.svg","tv_惊吓":"1f631.svg","tv_打脸":"1f928.svg","tv_抓狂":"1f616.svg","tv_挖鼻":"1f443.svg","tv_捂脸":"1f926.svg","tv_捂眼":"1f440.svg","tv_擦汗":"1f613.svg","tv_无语":"1f612.svg","tv_晕":"1f974.svg","tv_流汗":"1f613.svg","tv_流泪":"1f622.svg","tv_流鼻血":"1f912.svg","tv_点赞":"1f44d.svg","tv_生气":"1f620.svg","tv_生病":"1f912.svg","tv_疑问":"2753.svg","tv_睡着":"1f634.svg","tv_笑哭":"1f602.svg","tv_脸红":"1f633.svg","tv_耶":"270c.svg"},
+      enableQQ: true,
       path: window.location.pathname,
       visitor: false
     }, null))
@@ -475,7 +477,8 @@ if (true) {
   const loadValine = async () => {
     if (typeof Valine === 'function') initValine()
     else {
-      await getScript('https://cdn.cbd.int/valine@1.5.1/dist/Valine.min.js')
+      const valineSrc = 'https://cdn.cbd.int/valine@1.5.1/dist/Valine.min.js'
+      await getScript(valineSrc)
       initValine()
     }
   }
@@ -503,8 +506,8 @@ if (true) {
 
   const getIcon = (icon, mail) => {
     if (icon) return icon
-    let defaultIcon = '?d=mm'
-    let iconUrl = `https://gravatar.loli.net/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
+    let defaultIcon = '?d=monsterid'
+    let iconUrl = `https://cravatar.cn/avatar/${md5(mail.toLowerCase()) + defaultIcon}`
     return iconUrl
   }
 
@@ -536,7 +539,7 @@ if (true) {
   }
 
   const getComment = () => {
-    const serverURL = 'https://Tv1tQeDz.api.lncldglobal.com'
+    const serverURL = 'https://tv1tqedz.lc-cn-n1-shared.com'
 
     var settings = {
       "method": "GET",
